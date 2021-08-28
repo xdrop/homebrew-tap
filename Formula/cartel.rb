@@ -3,14 +3,14 @@ require_relative "lib/private_strategy"
 class Cartel < Formula
   desc "Local development service orchestrator"
   homepage "https://github.com/xdrop/cartel"
-  url "https://github.com/xdrop/cartel/archive/0.10.2-beta.tar.gz"
-  sha256 "5ffe4f1d3ce918a10d7ef6dcf062bb466169732c9d910df5c5ccc8ec4361d363"
+  url "https://github.com/xdrop/cartel/archive/0.11.0-beta.tar.gz"
+  sha256 "2f8012bad61ec37f80b3e7eddbf60aee359b8614894f58c93d2e3665b62261c5"
 
   bottle do
-    root_url "https://github.com/xdrop/cartel/releases/download/0.10.2-beta"
-    sha256 cellar: :any_skip_relocation, mojave: "3c56ac924e85af093fd818fc190ab7feaf24fcf60c26b6e80e0f6eae8f87493d"
-    sha256 cellar: :any_skip_relocation, catalina: "3c56ac924e85af093fd818fc190ab7feaf24fcf60c26b6e80e0f6eae8f87493d"
-    sha256 cellar: :any_skip_relocation, big_sur: "3c56ac924e85af093fd818fc190ab7feaf24fcf60c26b6e80e0f6eae8f87493d"
+    root_url "https://github.com/xdrop/cartel/releases/download/0.11.0-beta"
+    sha256 cellar: :any_skip_relocation, mojave: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    sha256 cellar: :any_skip_relocation, catalina: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    sha256 cellar: :any_skip_relocation, big_sur: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   end
 
   depends_on "rust-nightly" => :build
